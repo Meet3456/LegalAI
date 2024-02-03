@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { v4 as uuidv4 } from "uuid";
 import { useEffect } from "react";
+import { IoIosSend } from "react-icons/io";
 import axios from "axios";
 import MicIcon from "@mui/icons-material/Mic";
 import MicOffIcon from "@mui/icons-material/MicOff";
@@ -18,6 +19,8 @@ import {
 } from "@chainlit/react-client";
 import { useChatSession } from "@chainlit/react-client";
 import { useState } from "react";
+import Navbar from "@/navbar";
+import ChatWidget from "./ChatWidget";
 const CHAINLIT_SERVER = "http://localhost:8001";
 const userEnv = {};
 
@@ -29,9 +32,10 @@ export function Lawbot() {
 
   const renderDefaultQuestions = () => {
     return (
-      <div className='flex flex-wrap space-x-2'>
+      <div className='flex flex-wrap space-x-2 m-2'>
         {defaultQuestions.map((question, index) => (
           <Button
+          className="m-2"
             key={index}
             onClick={() => handleDefaultQuestionClick(question)}
           >
@@ -138,9 +142,9 @@ export function Lawbot() {
   };
 
   const defaultQuestions = [
-    "Tell me about yourself.",
-    "What are your strengths and weaknesses?",
-    "Why do you want to work for this company?",
+    "I am a 12-year old kid and my parents make me work at a factory. Please let me know about my basic human rights.",
+    "मैं 12 साल का बच्चा हूं और मेरे माता-पिता मुझे एक कारखाने में काम कराते हैं। कृपया मुझे मेरे मूल मानवाधिकारों के बारे में बताएं",
+    "J’ai 12 ans et mes parents me font travailler dans une usine. S’il vous plaît, faites-moi part de mes droits humains fondamentaux",
     // Add more default questions as needed
   ];
 
@@ -193,17 +197,22 @@ export function Lawbot() {
   };
 
   return (
+    <>
+    {/* <Navbar></Navbar> */}
+    <ChatWidget/>
     <div
       style={{
         backgroundImage:
-          'url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', // Replace with the actual path to your image
+        // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`, 
+        // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`, 
+        `url("https://www.need-lawyer.com/wp-content/uploads/2021/06/Robot-lawyer-scaled.jpeg")`, 
         backgroundSize: "cover", // Adjust as needed
         // backgroundPosition: 'center', // Adjust as needed
         height: "100vh",
       }}
       className='min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col'
     >
-      <div className='absolute top-4 right-4 z-10'>
+      {/* <div className='absolute top-4 right-4 z-10'>
         <FormControl sx={{ m: 1, minWidth: 100 }}>
           <InputLabel id='demo-simple-select-helper-label'>
             Languages
@@ -224,18 +233,19 @@ export function Lawbot() {
           </Select>
           <FormHelperText>Select Language of Response</FormHelperText>
         </FormControl>
-      </div>
-      <div className='flex-1 overflow-auto mt-32 pl-28 pr-28'>
-        <div className='space-y-4 bg-[#eeeeee] bg-opacity-70 p-2 border rounded-lg'>
+      </div> */}
+
+      <div className='flex-1 mt-32 pl-28 pr-28'>
+        <div className='space-y-4 bg-[#eeeeee] bg-opacity-40 p-2 border rounded-lg'>
+          Sample Prompts to the Lawbot
           <div className='space-y-4 p-2'>{renderDefaultQuestions()}</div>
           {messages.map((message) => renderMessage(message))}
         </div>
-      </div>
       <div className='border-t p-4 dark:bg-gray-800'>
         <div className='flex items-center space-x-2'>
           <Input
             autoFocus
-            className='flex-1'
+            className='flex-1 w-0.5 rounded-full py-4 text-2xl'
             id='message-input '
             placeholder='Type a message'
             value={inputValue}
@@ -245,15 +255,20 @@ export function Lawbot() {
                 handleSendMessage();
               }
             }}
-          />
-          <Button onClick={handleSendMessage} type='submit'>
-            Send
+            />
+          <Button onClick={handleSendMessage} className="bg-blue-500 hover:bg-green-500 p-4" type='submit'>
+          Send   
+          <IoIosSend size={20}/>
+            {/* Send */}
           </Button>
-          <Button onClick={handleRecordClick}>
+          <Button className="bg-blue-500 hover:bg-green-500 p-4" onClick={handleRecordClick}>
+            Record
             {isRecording ? <MicOffIcon /> : <MicIcon />}
           </Button>
         </div>
       </div>
+            </div>
     </div>
+    </>
   );
 }
