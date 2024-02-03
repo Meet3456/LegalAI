@@ -2,12 +2,14 @@
 
 ## Introduction
 **NYAYMITRA** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/aac772bc-89ed-42b3-aa99-ff91bc7b7579)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/756344e0-332e-4c2f-9983-b9c6ab4c4f3a)
+
 
 
 
 ### Personal Assistant
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/7b4ef67b-00d3-4b82-bf75-3ca754694f39)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/3af6c099-7aca-4ea0-8d0c-dd1da257378f)
+
 
 
 ### Webscrapping Latest News
@@ -21,7 +23,8 @@
 
 
 ### Lawbot
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/dc75c49b-ea11-43c6-a026-c5339709044a)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/e50fccdd-e4bb-46e2-9eff-747df7875908)
+
 
 
 
