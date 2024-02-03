@@ -2,44 +2,44 @@
 
 ## Introduction
 **NYAYMITRA** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/93ecb945-d917-4d46-9e84-5ab7f722a405)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/93ecb945-d917-4d46-9e84-5ab7f722a405)
 
 
 ### Personal Assistant
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/1ff6bf62-bc67-4fa8-8149-98a69aeb16ac)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/1ff6bf62-bc67-4fa8-8149-98a69aeb16ac)
 
 
 ### Webscrapping Latest News
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/9b27ce1a-a430-4411-ba1c-43bb30c690d7)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/9b27ce1a-a430-4411-ba1c-43bb30c690d7)
 
 
 ### Feature Page 
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/d57dfe11-4bf4-450d-b162-c642965f286e)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/d57dfe11-4bf4-450d-b162-c642965f286e)
 
 
 ### Lawbot
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/2c9fa872-0d87-4bc9-9f30-5082f9f37281)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/2c9fa872-0d87-4bc9-9f30-5082f9f37281)
 
 
 ### Document Summarization/QNA
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/ffde14aa-6ddf-4cca-ad4d-d15b349fe716)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/ffde14aa-6ddf-4cca-ad4d-d15b349fe716)
 
 
 ### Narrative Legalism
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/45d618cf-c511-47c5-ba04-b6d6aebc232b)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/45d618cf-c511-47c5-ba04-b6d6aebc232b)
 
 
 ### Document Drafting
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/3aeb6153-423a-499b-b802-a2be74f039a8)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/3aeb6153-423a-499b-b802-a2be74f039a8)
 
 
 ### Advocaate Connect Page
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/fbb4b94e-7629-492d-b532-91610d5fa03a)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/fbb4b94e-7629-492d-b532-91610d5fa03a)
 
 
 ### Admin Dashboard
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/e345424c-2afe-45a6-a78e-204b8d32f595)
-![image](https://github.com/haadirakhangi/Smart-India-hackathon-2023/assets/95705972/67519998-6710-435c-b69f-292d4676a797)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/e345424c-2afe-45a6-a78e-204b8d32f595)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/67519998-6710-435c-b69f-292d4676a797)
 
 
 
