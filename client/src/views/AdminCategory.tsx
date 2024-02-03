@@ -16,7 +16,8 @@ import {
     Button,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo-wbag.png';
+// import logo from '../img/logo-wbag.png';
+import logo from '../img/logo_wbag.png';
 import axios from 'axios';
 
 const AdminCategory = () => {

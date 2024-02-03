@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import the hamburger icon and close icon from react-icons
-import logo from './img/logo-wbag.png';
+import logo from './img/logo_wbag.png';
 import axios from 'axios';
 type Props = {};
 

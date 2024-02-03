@@ -1,6 +1,6 @@
 import React from 'react'
 import code_omega from './code_omega.png'
-import nyaymitra from './img/logo-wbag.png'
+import nyaymitra from './img/logo_wbag.png';
 
 type Props = {}
 
@@ -11,9 +11,9 @@ const footer = (props: Props) => {
                 <div className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex md:mx-0 mx-auto md:text-left md:mt-0 mt-10">
                         <a className="flex flex-col title-font font-medium items-center justify-center text-gray-900">
-                            <img src={nyaymitra} alt='nyaymitra' className='w-44' />
-                            <h1 className='text-sm'>By</h1>
-                            <img src={code_omega} alt='nyaymitra' className='w-44' />
+                            <img src={nyaymitra} alt='nyaymitra' className='w-80' />
+                            {/* <h1 className='text-sm'>By</h1> */}
+                            {/* <img src={code_omega} alt='nyaymitra' className='w-44' /> */}
                         </a>
 
                     </div>
@@ -28,7 +28,7 @@ const footer = (props: Props) => {
                                     <a className="text-sky-600 hover:text-gray-800">Human Rights</a>
                                 </li>
                                 <li>
-                                    <a className="text-sky-600 hover:text-gray-800">Features</a>
+                                    <a href="/features" className="text-sky-600 hover:text-gray-800">Features</a>
                                 </li>
                                 <li>
                                     <a className="text-sky-600 hover:text-gray-800">Community</a>
@@ -40,11 +40,11 @@ const footer = (props: Props) => {
                             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Team Members</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Haadi Rakhangi</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Aditya Shah</a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a className="text-gray-600 hover:text-gray-800">Hatim Mullajiwala</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a className="text-gray-600 hover:text-gray-800">Meet Vasa</a>
                                 </li>
@@ -56,11 +56,11 @@ const footer = (props: Props) => {
                             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Team Members</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Mehek Jain</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Devang Shah</a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a className="text-gray-600 hover:text-gray-800">Vedant Kambli</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a className="text-gray-600 hover:text-gray-800">Hastansh Pandit</a>
                                 </li>
