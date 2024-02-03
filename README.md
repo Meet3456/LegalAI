@@ -21,11 +21,13 @@
 
 
 ### Lawbot
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/2c9fa872-0d87-4bc9-9f30-5082f9f37281)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/dc75c49b-ea11-43c6-a026-c5339709044a)
+
 
 
 ### Document Summarization/QNA
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/ffde14aa-6ddf-4cca-ad4d-d15b349fe716)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/dea9a579-92d2-4d8f-8529-d254b1ba3f5d)
+
 
 
 ### Narrative Legalism
