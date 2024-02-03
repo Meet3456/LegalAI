@@ -189,15 +189,20 @@ def voice_chat():
                 "upload_voice/voice.wav", beam_size=5)
             print("Detected language '%s' with probability %f" %
                   (info.language, info.language_probability))
+            # for segment in segments:
+            #     print("[%.2fs -> %.2fs] %s" %
+            #           (segment.start, segment.end, segment.text))
+            #     text2 = segment.text
+            new_text = ""
             for segment in segments:
-                print("[%.2fs -> %.2fs] %s" %
-                      (segment.start, segment.end, segment.text))
-                text2 = segment.text
-            text = str([segment.text for segment in segments])
+                new_text += segment.text + " "
+            # text = str([segment.text for segment in segments])
+            text = " "
+            text = new_text
             print("Text", text)
-            print("Text2", text2)
+            # print("Text2", text)
             shutil.rmtree('upload_voice')
-            return jsonify({"message": text2, "email": "email", "response": True}), 200
+            return jsonify({"message": text, "email": "email", "response": True}), 200
 
         return 'Invalid file type', 400
 

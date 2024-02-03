@@ -12,7 +12,7 @@ import {
 } from "@chainlit/react-client";
 import { useChatSession } from "@chainlit/react-client";
 import { useState } from "react";
-const CHAINLIT_SERVER = "http://localhost:8000";
+const CHAINLIT_SERVER = "http://localhost:8003";
 const userEnv = {};
 
 export function NarrativeLegalism() {

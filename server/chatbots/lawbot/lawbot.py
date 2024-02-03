@@ -82,21 +82,22 @@ async def main(message: cl.Message):
     # else:
     #     print('Error occurred:', response.status_code)
 
-    text_elements = []
-    if source_documents:
-        for source_idx, source_doc in enumerate(source_documents):
-            source_name = f"source_{source_idx}"
-            # Create the text element referenced in the message
-            text_elements.append(
-                cl.Text(content=source_doc.page_content, name=source_name)
-            )
-        source_names = [text_el.name for text_el in text_elements]
+    # text_elements = []
+    # if source_documents:
+    #     for source_idx, source_doc in enumerate(source_documents):
+    #         source_name = f"source_{source_idx}"
+    #         # Create the text element referenced in the message
+    #         text_elements.append(
+    #             cl.Text(content=source_doc.page_content, name=source_name)
+    #         )
+    #     source_names = [text_el.name for text_el in text_elements]
 
-        if source_names:
-            trans_output += f"\nSources: {', '.join(source_names)}"
-        else:
-            trans_output += "\nNo sources found"
+    #     if source_names:
+    #         trans_output += f"\nSources: {', '.join(source_names)}"
+    #     else:
+    #         trans_output += "\nNo sources found"
 
 
-    await cl.Message(content=trans_output,author="Tool 1",elements=text_elements).send()
+    await cl.Message(content=trans_output,author="Tool 1").send()
+
 
