@@ -11,11 +11,13 @@
 
 
 ### Webscrapping Latest News
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/9b27ce1a-a430-4411-ba1c-43bb30c690d7)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/6255c4d5-25e4-4e7e-a245-28980b386130)
+
 
 
 ### Feature Page 
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/d57dfe11-4bf4-450d-b162-c642965f286e)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/ae27f383-5b99-4b35-a0e7-04b2564651a8)
+
 
 
 ### Lawbot
@@ -27,20 +29,25 @@
 
 
 ### Narrative Legalism
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/45d618cf-c511-47c5-ba04-b6d6aebc232b)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/3ffcf4e6-0dde-4b76-9a59-dc37361339de)
+
 
 
 ### Document Drafting
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/3aeb6153-423a-499b-b802-a2be74f039a8)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/156b6fc8-2c65-4ce3-bcfc-7ef5a84b2148)
+
 
 
 ### Advocaate Connect Page
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/fbb4b94e-7629-492d-b532-91610d5fa03a)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/0346a969-3e71-4ea2-b361-2324f4be4c6e)
+
 
 
 ### Admin Dashboard
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/e345424c-2afe-45a6-a78e-204b8d32f595)
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/95705972/67519998-6710-435c-b69f-292d4676a797)
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/23d83b4e-f774-456d-9b36-9ebaabca8395)
+
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/7a8cdb7e-b151-4daf-b97c-0b72c1817c73)
+
 
 
 
