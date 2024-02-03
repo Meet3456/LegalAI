@@ -94,9 +94,7 @@
 }
 
 .main-new {
-  background-image: linear-gradient(to top, #8B4513 0%, #BC8F8F 100%);
-
-
+  background-image: linear-gradient(to top, #8b4513 0%, #bc8f8f 100%);
 }
 
 .open-button {
@@ -134,7 +132,8 @@
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type="text"],
+.form-container input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -143,20 +142,21 @@
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
@@ -166,12 +166,21 @@
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 
 .input {
-  height:  100px;
+  height: 100px;
   padding-top: 20px;
   border-radius: 5px;
 }
+
+.ml-5 {
+  font-weight: bold;
+  padding-top: 20px;
+  text-decoration-line: underline;
+  color: black;
+}
+
