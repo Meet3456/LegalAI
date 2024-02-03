@@ -17,7 +17,8 @@ import Navbar from '@/navbar';
 import Footer from '@/footer';
 import lawyer_img from './assets/lawyer.svg'
 import { useEffect, useRef, useState } from 'react';
-import freedom from './human-rights/freedom.jpg'
+import freedom from './human-rights/freedom.jpg';
+import "../../src/main/assets/css/bd-coming-soon.css";
 
 interface CardData {
     imageUrl: string;
@@ -118,27 +119,54 @@ const Home: React.FC = () => {
             <Navbar />
             <ChatWidget />
 
-
-            <header id="header_new" style={{
+            <body className="main2 mt-3 leading-normal tracking-normal text-white gradient">
+           
+            {/* <header id="header_new" style={{
                 backgroundImage: 'url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")', // Replace with the actual path to your image
                 backgroundSize: 'cover', // Adjust as needed
                 // backgroundPosition: 'center', // Adjust as needed
                 height: "100vh",
-            }} className="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+            }} className="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32"> */}
                 <div className="container mt-28 flex flex-col justify-center px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-10">
                     <div className="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
-                        <h1 className="h1-large mb-4">NyayMitra</h1>
-                        <p className="p-large mb-8">Are you tired of navigating the complex world of legal jargon and documentation? Look no further!</p>
-                        <a className="bg-[#eb427e] pl-8 pr-8 pt-3 pb-3 rounded-xl hover:bg-transparent hover:border border-white hover:text-black hover:no-underline" href="#your-link">Get Started</a>
+                        <h1 className="h1-large mb-4 text-5xl">LAW BUDDY</h1>
+                        <p className="p-large mb-8 text-black text-3xl"><strong>Are you tired of navigating the complex world of legal jargon and documentation? Look no further!</strong></p>
+                  <button className="text-lg ml-2 hover:underline bg-yellow-900 text-white font-semibold rounded-3xl my-6 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        <a className="page-scroll " href="/userhome"> Get Started
+                    {/* <NavLink to="/advoconnect">AdvoConnect</NavLink> */}
+                </a>
+                  </button>
+                        {/* <a className="bg-[#eb427e] pl-8 pr-8 pt-3 pb-3 rounded-xl hover:bg-transparent hover:border border-white hover:text-black hover:no-underline" href="#your-link">Get Started</a> */}
                     </div>
                 </div>
-            </header>
-            <div className="pt-4 pb-14 text-center">
+            {/* </header> */}
+            {/* <div className="pt-4 pb-14 text-center">
                 <div className="container px-4 sm:px-8 xl:px-4">
                     <p className="mb-4 mt-12 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto font-serif"> Welcome to "NyayMitra" your friendly guide to understanding the ins and outs of the legal world. Whether you're a law enthusiast, a student with legal dreams, or just curious about how laws affect you, this show is here to make it all clear and interesting.</p>
                 </div>
-            </div>
-
+            </div> */}
+            <div className="relative -mt-12 lg:-mt-24"> 
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    
+    <ChatWidget />
+</body>
 
 
 
@@ -155,18 +183,19 @@ const Home: React.FC = () => {
 
 
 
-            <div id="details" className="pt-12 pb-16 lg:pt-16">
-                <div className="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+            <div id="details" className="pt-12 pb-16 lg:pt-16 justify-center items-center mx-auto my-auto">
+                <div className="container mx-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-40">
                     <div className="lg:col-span-5">
                         <div className="mb-16 lg:mb-0 xl:mt-16">
                             <h2 className="mb-6">Document Drafting</h2>
-                            <p className="mb-4">Immerse yourself in the NyayMitra Community, a digital sanctuary for legal enthusiasts and inquisitive minds alike. Engage in thought-provoking discussions, seek advice, and explore an abundance of legal resources within a supportive network</p>
-                            <p className="mb-4">Whether you're a seasoned professional or an eager learner, NyayMitra Community is your destination for continuous legal education, networking opportunities, and staying informed about the ever-evolving legal landscape.</p>
+                            <p className="my-4">Immerse yourself in the NyayMitra Community, a digital sanctuary for legal enthusiasts and inquisitive minds alike. Engage in thought-provoking discussions, seek advice, and explore an abundance of legal resources within a supportive network</p>
+                            <p className="my-4">Whether you're a seasoned professional or an eager learner, NyayMitra Community is your destination for continuous legal education, networking opportunities, and staying informed about the ever-evolving legal landscape.</p>
                         </div>
+                    <a className="btn-solid-reg popup-with-move-anim" href="https://localhost:8000">Details</a>
                     </div>
-                    <div className="lg:col-span-7">
+                    <div className="mx-auto lg:col-span-7">
                         <div className="xl:ml-14">
-                            <img className="inline" src={documentDraft} alt="alternative" />
+                            <img className="inline h-1/6 w-1/2" src={documentDraft} alt="alternative" />
                         </div>
                     </div>
                 </div>
@@ -193,24 +222,26 @@ const Home: React.FC = () => {
                                     <div> Whether it's understanding your rights in everyday situations or navigating through legal challenges, the KYR Framework ensures you're equipped with the knowledge to make informed decisions confidently. NyayMitra transforms legal understanding into a practical and engaging adventure with the KYR Framework.</div>
                                 </li>
                             </ol>
-                            <a className="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Details</a>
+                            <a className="btn-solid-reg popup-with-move-anim" href="/chatbot-lawbot">Details</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="pt-16 pb-12">
-                <div className="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+            <div className="ml-32 pt-16 pb-12">
+                <div className="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-40">
                     <div className="lg:col-span-5">
                         <div className="mb-16 lg:mb-0 xl:mt-16">
                             <h2 className="mb-6">Narrative Legalism</h2>
                             <p className="mb-4">Embark on a captivating journey through Narrative Legalism, an innovative chatbot that transforms the learning of laws into playful and enjoyable narratives. </p>
                             <p className="mb-4">Dive into engaging stories that unravel legal complexities in a fun and accessible manner. NyayMitra's Narrative Legalism goes beyond traditional legal education, making the exploration of laws a delightful adventure through interactive storytelling</p>
                         </div>
+                        <a className="btn-solid-reg popup-with-move-anim" href="https://localhost:8003">Details</a>
+                    
                     </div>
                     <div className="lg:col-span-7">
                         <div className="ml-14">
-                            <img className="inline" src={lawJargon} alt="alternative" />
+                            <img className="inline h-1/6 w-1/2" src={lawJargon} alt="alternative" />
                         </div>
                     </div>
                 </div>
@@ -234,7 +265,9 @@ const Home: React.FC = () => {
                                     <div> Imagine a streamlined process that connects you with the ideal legal expert based on your unique needs, location, and specialization requirements. Bid farewell to the arduous task of finding the right lawyer; AdvoConnect simplifies the journey, ensuring you discover the perfect legal representation effortlessly and effectively..</div>
                                 </li>
                             </ol>
-                            <a className="bg-[#eb427e] pl-8 pr-8 pt-3 pb-3 rounded-xl hover:bg-transparent hover:border border-white hover:text-black hover:no-underline">Details</a>
+                            <a className="btn-solid-reg popup-with-move-anim" href="/advoconnect">Details</a>
+                    
+                            {/* <a className="bg-[#eb427e] pl-8 pr-8 pt-3 pb-3 rounded-xl hover:bg-transparent hover:border border-white hover:text-black hover:no-underline">Details</a> */}
                         </div>
                     </div>
                 </div>
