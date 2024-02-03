@@ -13,10 +13,11 @@ import {
     ListItemText,
     Paper,
     Avatar,
-    Button,
+    Button
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo-wbag.png';
+import VerifiedIcon from '@mui/icons-material/Verified';
 import axios from 'axios';
 
 const AdminCategory = () => {
@@ -72,25 +73,46 @@ const AdminCategory = () => {
     
 
     return (
-        <div style={{ display: 'flex', height: '100vh', width:'auto'}}>
-            {/* Sidebar (20%) */}
-            <div style={{ flex: '0 0 20%' }} className='bg-sky-200 p-2'>
-                <img src={logo} className='m-auto'></img>
-                <List>
-                    <ListItem component={Link} to="/admin-home" className='hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'>
-                        <DashboardIcon></DashboardIcon>
-                        <ListItemText className='m-2' primary="Dashboard" />
-                    </ListItem>
-                    <ListItem component={Link} to="/category" className='hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'>
-                        <CategoryIcon></CategoryIcon>
-                        <ListItemText className='m-2' primary="Category" />
-                    </ListItem>
-                    <ListItem component={Link} to="/logout" className='hover:bg-sky-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'>
-                        <LogoutIcon></LogoutIcon>
-                        <ListItemText className='m-2' primary="Logout" />
-                    </ListItem>
-                </List>
-            </div>
+        <div style={{ display: 'flex', height: '100vh' }}>
+        {/* Sidebar (20%) */}
+        <div style={{ flex: '0 0 20%' }} className='bg-sky-200 p-2'>
+            <img src={logo} className='m-auto w-4/6'></img>
+            <List>
+                <a><ListItem
+                    component={Link}
+                    to='/admin-home'
+                    className='hover:bg-blue-500 translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                >
+                    <DashboardIcon></DashboardIcon>
+                    <ListItemText className='m-2' primary='Dashboard' />
+                </ListItem></a>
+                <ListItem
+                    component={Link}
+                    to='/admin-category'
+                    className='bg-blue-500 translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                >
+                    <CategoryIcon></CategoryIcon>
+                    <ListItemText className='m-2' primary='Category' />
+                </ListItem>
+                <ListItem
+                    component={Link}
+                    to='/admin-advocate-verified'
+                    className='hover:bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                >
+                    <VerifiedIcon></VerifiedIcon>
+                    <ListItemText className='m-2' primary='Advocate Verifications' />
+                </ListItem>
+                <ListItem
+                    component={Link}
+                    to='/admin-login'
+                    className='hover:bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                >
+                    <LogoutIcon></LogoutIcon>
+                    <ListItemText className='m-2' primary='Logout' />
+                </ListItem>
+            </List>
+        </div>
+
 
             {/* Main Content (80%) */}
             <div style={{ flex: '1', padding: '16px' }}>

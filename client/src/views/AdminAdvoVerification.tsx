@@ -96,7 +96,7 @@ const AdminAdvoVerification: React.FC = () => {
                     </ListItem></a>
                     <ListItem
                         component={Link}
-                        to='/category'
+                        to='/admin-category'
                         className='hover:bg-blue-500 translate-y-1 hover:scale-105 transition ease-in-out delay-90'
                     >
                         <CategoryIcon></CategoryIcon>
@@ -112,7 +112,7 @@ const AdminAdvoVerification: React.FC = () => {
                     </ListItem>
                     <ListItem
                         component={Link}
-                        to='/logout'
+                        to='/admin-login'
                         className='hover:bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
                     >
                         <LogoutIcon></LogoutIcon>

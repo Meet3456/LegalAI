@@ -24,7 +24,7 @@ from deep_translator import GoogleTranslator
 
 model_size = "large-v3"
 model = WhisperModel(model_size, device="cpu", compute_type="int8")
-FEATURE_DOCS_PATH = 'nyaymitra_data/Perfect_nyaymitra_explaination.pdf'
+FEATURE_DOCS_PATH = 'nyaymitra_data/Perfect_nyaymitra_explanation.pdf'
 loader = PyPDFLoader(FEATURE_DOCS_PATH)
 docs = loader.load()
 docs_splitter = RecursiveCharacterTextSplitter(
@@ -116,13 +116,13 @@ tools = [
         'function': {
 
             'name': 'retrieval_augmented_generation',
-            'description': 'Fetches information about Nyaymitra\'s platform to answer user\'s query',
+            'description': 'Fetches information about LayBuddys\'s platform to answer user\'s query',
             'parameters': {
                 'type': 'object',
                 'properties': {
                     'query': {
                         'type': 'string',
-                        'description': 'The query to use for searching the vector database of Nyaymitra'
+                        'description': 'The query to use for searching the vector database of LawBuddy'
                     },
                 },
                 'required': ['query']
@@ -147,8 +147,8 @@ def user_login():
         return jsonify({"message": "Incorrect password", "response": False}), 201
     client = OpenAI()
     assistant = client.beta.assistants.create(
-        name="NYAYMITRA",
-        instructions="You are a helpful assistant for the website Nyaymitra. Use the functions provided to you to answer user's question about the Nyaymitra platform. Help the user with navigating and getting information about the Nyaymitra website.Provide the navigation links defined in the document whenever required",
+        name="LAWBUDDY",
+        instructions="You are a helpful assistant for the website LawBuddy. Use the functions provided to you to answer user's question about the Nyaymitra platform. Help the user with navigating and getting information about the Nyaymitra website.Provide the navigation links defined in the document whenever required",
         model="gpt-3.5-turbo-1106",
         tools=tools
     )
@@ -189,15 +189,20 @@ def voice_chat():
                 "upload_voice/voice.wav", beam_size=5)
             print("Detected language '%s' with probability %f" %
                   (info.language, info.language_probability))
+            # for segment in segments:
+            #     print("[%.2fs -> %.2fs] %s" %
+            #           (segment.start, segment.end, segment.text))
+            #     text2 = segment.text
+            new_text = ""
             for segment in segments:
-                print("[%.2fs -> %.2fs] %s" %
-                      (segment.start, segment.end, segment.text))
-                text2 = segment.text
-            text = str([segment.text for segment in segments])
+                new_text += segment.text + " "
+            # text = str([segment.text for segment in segments])
+            text = " "
+            text = new_text
             print("Text", text)
-            print("Text2", text2)
+            # print("Text2", text)
             shutil.rmtree('upload_voice')
-            return jsonify({"message": text2, "email": "email", "response": True}), 200
+            return jsonify({"message": text, "email": "email", "response": True}), 200
 
         return 'Invalid file type', 400
 
