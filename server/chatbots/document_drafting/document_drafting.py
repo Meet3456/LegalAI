@@ -25,7 +25,7 @@ async def main(message: cl.Message):
         trans_query = GoogleTranslator(source=source_lang, target='en').translate(message.content)
     else:
         trans_query = message.content
-    print('Translated Query', trans_query)
+    print('Translated Query', trans_query) 
 
     await cl.Avatar(
         name="Tool 1",

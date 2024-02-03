@@ -1,3 +1,7 @@
+.gradient {
+  /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
+  background: linear-gradient(90deg, #996633 0%, #ffdf80 100%);
+}
 @font-face {
   font-family: 'Poppins';
   src: url("../fonts/Poppins/Poppins-SemiBold.eot");
@@ -29,17 +33,35 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .main{
   font-family: "Poppins", sans-serif;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
   background-image: url("../images/law_1.jpeg");
+  /* background-image: url("../../main/lawimg2.jpg"); */
+  /* background-image: url("../images/law.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: black;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.main2{
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
+  /* background-image: url("../images/law_1.jpeg"); */
+  background-image: url("../../lawimg2.jpg");
+  /* background-image: url("../images/law.jpeg"); */
+  filter: brightness(0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -262,7 +284,13 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 25px;
+  margin-right: 5px;
+}
+.maintain2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-right: 5px; */
 }
 
 .nav {
@@ -274,6 +302,19 @@ main {
   color: #ffffff;
   padding: 14px 40px;
   margin: 5px;
+  border-radius: 10px;
+  align-items: center;
+
+}
+.nav2 {
+  background: #D35B3F;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 14px 40px;
+  margin: 1px;
   border-radius: 10px;
   align-items: center;
 

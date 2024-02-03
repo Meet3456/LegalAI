@@ -20,7 +20,7 @@ import {
 } from '@mui/material';
 // import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from 'recharts';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo-wbag.png';
+import logo from '../img/logo_wbag.png';
 import { styled } from '@mui/material/styles';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';

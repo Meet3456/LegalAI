@@ -63,7 +63,7 @@ async def on_message(message: cl.Message):
 
 
 
-# @cl.on_chat_end
-# def end():
-#     trans_output = cl.user_session.get("trans_output")
-#     text_to_speech(trans_output)
+@cl.on_chat_end
+def end():
+    trans_output = cl.user_session.get("trans_output")
+    text_to_speech(trans_output)
