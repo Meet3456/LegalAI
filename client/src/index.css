@@ -94,7 +94,9 @@
 }
 
 .main-new {
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-image: linear-gradient(to top, #8B4513 0%, #BC8F8F 100%);
+
+
 }
 
 .open-button {
@@ -166,4 +168,10 @@
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+.input {
+  height:  100px;
+  padding-top: 20px;
+  border-radius: 5px;
 }
