@@ -316,7 +316,7 @@ const AdminDashboard: React.FC = () => {
                             style={{ marginLeft: '10px' }}
                             onClick={handleFineSubmit}
                         >
-                            Genrate Questions
+                            Generate Questions
                         </Button>
                         {generatedQuestions.map((question, index) => (
                             <FormControl key={index} fullWidth margin="normal">

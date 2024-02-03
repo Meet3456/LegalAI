@@ -73,29 +73,29 @@ async def main(message: cl.Message):
     else:
         trans_output = final_answer
     # Sql Database
-    data = {}
-    data['query']=trans_query
-    data['mostcommon']=most_common_filename
-    response = requests.post('http://127.0.0.1:5000/categoryy', json=data,headers = {"Content-Type": "application/json"})
-    if response.status_code == 200:
-        print('Response from Flask server:', response.text)
-    else:
-        print('Error occurred:', response.status_code)
+    # data = {}
+    # data['query']=trans_query
+    # data['mostcommon']=most_common_filename
+    # response = requests.post('http://127.0.0.1:5000/category', json=data,headers = {"Content-Type": "application/json"})
+    # if response.status_code == 200:
+    #     print('Response from Flask server:', response.text)
+    # else:
+    #     print('Error occurred:', response.status_code)
 
-    # text_elements = []
-    # if source_documents:
-    #     for source_idx, source_doc in enumerate(source_documents):
-    #         source_name = f"source_{source_idx}"
-    #         # Create the text element referenced in the message
-    #         text_elements.append(
-    #             cl.Text(content=source_doc.page_content, name=source_name)
-    #         )
-    #     source_names = [text_el.name for text_el in text_elements]
+    text_elements = []
+    if source_documents:
+        for source_idx, source_doc in enumerate(source_documents):
+            source_name = f"source_{source_idx}"
+            # Create the text element referenced in the message
+            text_elements.append(
+                cl.Text(content=source_doc.page_content, name=source_name)
+            )
+        source_names = [text_el.name for text_el in text_elements]
 
-    #     if source_names:
-    #         trans_output += f"\nSources: {', '.join(source_names)}"
-    #     else:
-    #         trans_output += "\nNo sources found"
+        if source_names:
+            trans_output += f"\nSources: {', '.join(source_names)}"
+        else:
+            trans_output += "\nNo sources found"
 
 
     await cl.Message(content=trans_output,author="Tool 1").send()
