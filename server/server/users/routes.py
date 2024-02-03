@@ -27,10 +27,12 @@ model = WhisperModel(model_size, device="cpu", compute_type="int8")
 FEATURE_DOCS_PATH = 'nyaymitra_data/Perfect_nyaymitra_explaination.pdf'
 loader = PyPDFLoader(FEATURE_DOCS_PATH)
 docs = loader.load()
-docs_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+docs_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1000, chunk_overlap=200)
 split_docs = docs_splitter.split_documents(docs)
 NYAYMITRA_FEATURES_VECTORSTORE = FAISS.from_documents(split_docs, EMBEDDINGS)
-NYAYMITRA_FEATURES_VECTORSTORE.save_local('nyaymitra_data/faiz_index_assistant')
+NYAYMITRA_FEATURES_VECTORSTORE.save_local(
+    'nyaymitra_data/faiz_index_assistant')
 print('CREATED VECTORSTORE')
 VECTORDB = FAISS.load_local('nyaymitra_data/faiz_index_assistant', EMBEDDINGS)
 
@@ -272,13 +274,14 @@ def get_advocate():
     data = request.json
     print("I am here my friend")
     search_value = data.get('search', '')
+    print("ye hai search value", search_value)
     spec = get_specialization_from_text(user_input=search_value)
     print("Specualizaton:-----------------", spec)
     user_id = session.get("user_id", None)
     user = User.query.get(user_id)
     advocates_data = [advocate.to_dict() for advocate in Advocate.query.filter(
-    or_(*[Advocate.specialization == value for value in spec]),
-    Advocate.city == user.city,
+        or_(*[Advocate.specialization == value for value in spec]),
+        Advocate.city == user.city,
     ).order_by(Advocate.min_cost_per_hr.asc(), Advocate.rating.desc()).all()]
     # for advocate in advocates_data:
     #     advocate['languages'] = json.loads(advocate['languages'])
@@ -312,7 +315,7 @@ def submit_tool_outputs(thread_id, run_id, tools_to_call):
         print('TOOL CALLED:', tool_name)
         print('ARGUMENTS:', tool_args)
         tool_to_use = available_tools.get(tool_name)
-        if tool_name =='retrieval_augmented_generation':
+        if tool_name == 'retrieval_augmented_generation':
             tool_args_dict = ast.literal_eval(tool_args)
             query = tool_args_dict['query']
             output = tool_to_use(query)
@@ -346,7 +349,8 @@ def chatbot_route():
     if query:
         source_language = detect_source_langauge(query)
         if source_language != 'en':
-            trans_query = GoogleTranslator(source=source_language, target='en').translate(query)
+            trans_query = GoogleTranslator(
+                source=source_language, target='en').translate(query)
         else:
             trans_query = query
         assistant_id = session['assistant_id']
@@ -357,7 +361,7 @@ def chatbot_route():
         message = client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
-            content= trans_query,
+            content=trans_query,
         )
         run = client.beta.threads.runs.create(
             thread_id=thread.id,
@@ -368,22 +372,26 @@ def chatbot_route():
         if run.status == 'failed':
             print(run.error)
         elif run.status == 'requires_action':
-            run = submit_tool_outputs(thread.id, run.id, run.required_action.submit_tool_outputs.tool_calls)
-            run = wait_on_run(run.id,thread.id)
-        messages = client.beta.threads.messages.list(thread_id=thread.id,order="asc")
-        print('message',messages)
+            run = submit_tool_outputs(
+                thread.id, run.id, run.required_action.submit_tool_outputs.tool_calls)
+            run = wait_on_run(run.id, thread.id)
+        messages = client.beta.threads.messages.list(
+            thread_id=thread.id, order="asc")
+        print('message', messages)
         content = None
         for thread_message in messages.data:
             content = thread_message.content
         print("Content List", content)
         if len(tool_check) == 0:
             chatbot_reply = content[0].text.value
-            print("Chatbot reply",chatbot_reply)
+            print("Chatbot reply", chatbot_reply)
             if source_language != 'en':
-                trans_output = GoogleTranslator(source='auto', target=source_language).translate(chatbot_reply)
+                trans_output = GoogleTranslator(
+                    source='auto', target=source_language).translate(chatbot_reply)
             else:
                 trans_output = chatbot_reply
-            response = {'chatbotResponse': trans_output,'function_name': 'normal_search'}
+            response = {'chatbotResponse': trans_output,
+                        'function_name': 'normal_search'}
         return jsonify(response)
     else:
         return jsonify({'error': 'User message not provided'}), 400

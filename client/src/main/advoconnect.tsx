@@ -195,12 +195,15 @@ const Input: React.FC<InputProps> = ({ placeholder, onChange }) => (
   />
 );
 
+
+
 const Lawyers: React.FC = () => {
   const [lawyersData, setLawyersData] = useState<Lawyer[]>([]);
   const [filteredLawyers, setFilteredLawyers] = useState<Lawyer[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
 
   const getLawyersDataFromServer = async (searchValue: string) => {
+    console.log("input value",searchValue)
     try {
       const response = await axios.post("/api/user/get-advocate", {
         search: searchValue,
@@ -218,6 +221,10 @@ const Lawyers: React.FC = () => {
   const searchItems = (searchValue: string) => {
     setSearchInput(searchValue);
   };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setSearchInput(event.target.value)
+  }
 
   const showLawyerCards = () => {
     if (lawyersData.length === 0) {
@@ -299,6 +306,7 @@ const Lawyers: React.FC = () => {
               id='large-input'
               className='block ml-6 w-[85%] mr-4 p-2 text-gray-900  '
               placeholder='Just Ask'
+              onChange={handleChange}
             />
             <button
               onClick={() => getLawyersDataFromServer(searchInput)}
