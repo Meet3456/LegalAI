@@ -1,7 +1,7 @@
-# NYAYMITRA
+# LAWBUDDY
 
 ## Introduction
-**NYAYMITRA** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
+**LAWBUDDY** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
 ![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/756344e0-332e-4c2f-9983-b9c6ab4c4f3a)
 
 
@@ -63,7 +63,7 @@
 
 
 ### Document Summarization
-- **NyayMitra's Document QNA**: Focuses on the importance of documents, offering insights into each point to consider while creating and reviewing legal documents. This feature helps in nullifying human errors during the document preparation process.
+- **LayBuddy's Document QNA**: Focuses on the importance of documents, offering insights into each point to consider while creating and reviewing legal documents. This feature helps in nullifying human errors during the document preparation process.
 
 ### Narrative Legalism
 - **Story-Like Explanations**: Simplifies complex legal concepts through engaging narrative-style content, making legal learning more accessible and engaging for Law Students.
@@ -178,9 +178,7 @@ To get started with NYAYMITRA, follow these steps after cloning the repository:
 - **APIs**: OpenAI, Pinecone, Hugging Face
 
 ## Contributors
-- Haadi Rakhangi - haadirakhangi
-- Hatim Mullajiwala - HatimCodeforever
-- Vedant Kambli - Vedant-K1
-- Mehek Jain - Mehekjain05
+- Aditya Shah - adityashah841
+- Devang Shah - Devang-Shah-49
 - Hastansh Pandit - Hastansh12
 - Meet Vasa - Meet3456
