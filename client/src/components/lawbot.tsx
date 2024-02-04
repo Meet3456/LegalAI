@@ -35,7 +35,7 @@ export function Lawbot() {
       <div className='flex flex-wrap space-x-2 m-2'>
         {defaultQuestions.map((question, index) => (
           <Button
-          className="m-2"
+            className='m-2'
             key={index}
             onClick={() => handleDefaultQuestionClick(question)}
           >
@@ -149,7 +149,7 @@ export function Lawbot() {
   ];
 
   const handleSendMessage = () => {
-    console.log("koi input value hai",inputValue)
+    console.log("koi input value hai", inputValue);
     const content = inputValue.trim();
     if (content) {
       const message = {
@@ -198,21 +198,23 @@ export function Lawbot() {
 
   return (
     <>
-    {/* <Navbar></Navbar> */}
-    <ChatWidget/>
-    <div
-      style={{
-        backgroundImage:
-        // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`, 
-        // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`, 
-        `url("https://www.need-lawyer.com/wp-content/uploads/2021/06/Robot-lawyer-scaled.jpeg")`, 
-        backgroundSize: "cover", // Adjust as needed
-        // backgroundPosition: 'center', // Adjust as needed
-        height: "100vh",
-      }}
-      className='min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col'
-    >
-      {/* <div className='absolute top-4 right-4 z-10'>
+      {/* <Navbar></Navbar> */}
+      <ChatWidget />
+      <div
+        style={{
+          backgroundImage:
+            // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`,
+            // `url("https://unherd.com/wp-content/uploads/2023/01/GettyImages-958260048-scaled.jpg")`,
+            `url("https://www.need-lawyer.com/wp-content/uploads/2021/06/Robot-lawyer-scaled.jpeg")`,
+          backgroundSize: "cover", // Adjust as needed
+          // backgroundPosition: 'center', // Adjust as needed
+          height: "100%",
+          width: "100%",
+          opacity: 0.8,
+        }}
+        className='min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col'
+      >
+        {/* <div className='absolute top-4 right-4 z-10'>
         <FormControl sx={{ m: 1, minWidth: 100 }}>
           <InputLabel id='demo-simple-select-helper-label'>
             Languages
@@ -235,40 +237,47 @@ export function Lawbot() {
         </FormControl>
       </div> */}
 
-      <div className='flex-1 mt-32 pl-28 pr-28'>
-        <div className='space-y-4 bg-[#eeeeee] bg-opacity-40 p-2 border rounded-lg'>
-          Sample Prompts to the Lawbot
-          <div className='space-y-4 p-2'>{renderDefaultQuestions()}</div>
-          {messages.map((message) => renderMessage(message))}
-        </div>
-      <div className='border-t p-4 dark:bg-gray-800'>
-        <div className='flex items-center space-x-2'>
-          <Input
-            autoFocus
-            className='flex-1 w-0.5 rounded-full py-4 text-2xl'
-            id='message-input '
-            placeholder='Type a message'
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyUp={(e) => {
-              if (e.key === "Enter") {
-                handleSendMessage();
-              }
-            }}
-            />
-          <Button onClick={handleSendMessage} className="bg-blue-500 hover:bg-green-500 p-4" type='submit'>
-          Send   
-          <IoIosSend size={20}/>
-            {/* Send */}
-          </Button>
-          <Button className="bg-blue-500 hover:bg-green-500 p-4" onClick={handleRecordClick}>
-            Record
-            {isRecording ? <MicOffIcon /> : <MicIcon />}
-          </Button>
+        <div className='flex-1 mt-32 pl-28 pr-28'>
+          <div className='space-y-4 bg-[#eeeeee] bg-opacity-60 text-black text-xl p-2 border rounded-lg'>
+            Sample Prompts to the Lawbot
+            <div className='space-y-4 p-2'>{renderDefaultQuestions()}</div>
+            {messages.map((message) => renderMessage(message))}
+          </div>
+          <div className='border-t p-4 dark:bg-gray-800'>
+            <div className='flex items-center space-x-2'>
+              <Input
+                autoFocus
+                className='flex-1 w-0.5 rounded-full py-4 text-2xl'
+                id='message-input '
+                placeholder='Type a message'
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyUp={(e) => {
+                  if (e.key === "Enter") {
+                    handleSendMessage();
+                  }
+                }}
+              />
+              <Button
+                onClick={handleSendMessage}
+                className='bg-blue-500 hover:bg-green-500 p-4'
+                type='submit'
+              >
+                Send
+                <IoIosSend size={20} />
+                {/* Send */}
+              </Button>
+              <Button
+                className='bg-blue-500 hover:bg-green-500 p-4'
+                onClick={handleRecordClick}
+              >
+                Record
+                {isRecording ? <MicOffIcon /> : <MicIcon />}
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
-            </div>
-    </div>
     </>
   );
 }
