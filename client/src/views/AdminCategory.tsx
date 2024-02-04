@@ -16,9 +16,14 @@ import {
     Button,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import VerifiedIcon from '@mui/icons-material/Verified';
 // import logo from '../img/logo-wbag.png';
 import logo from '../img/logo_wbag.png';
+=======
+import logo from '../img/logo_wbag.png';
+import VerifiedIcon from '@mui/icons-material/Verified';
+>>>>>>> bcca1974b757ac840d38808d37352084045c9fc4
 import axios from 'axios';
 
 const AdminCategory = () => {
