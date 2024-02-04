@@ -81,7 +81,7 @@
 
 
 ## Getting Started
-To get started with NYAYMITRA, follow these steps after cloning the repository:
+To get started with LawBuddy, follow these steps after cloning the repository:
 
 ### Setting Up the Client-Side
 1. **Navigate to the Client Directory**:
