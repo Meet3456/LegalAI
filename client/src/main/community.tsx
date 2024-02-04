@@ -33,7 +33,7 @@ const Community = (props: Props) => {
                 <div id='info'>
                     <h1 id='name'>
                         <br />
-                        <a href='/'>NyayMitra</a>
+                        <a href='/'>Law Buddy</a>
                         <br />
                     </h1>
 
@@ -65,9 +65,9 @@ const Community = (props: Props) => {
             </header>
             <main>
                 <aside>
-                    <h2>Welcome to NyayMitra</h2>
+                    <h2>Welcome to Law Buddy</h2>
                     <p>
-                        Ready to experience the future of legal assistance? Join the LawBot AI community today and embark on a smoother, more informed legal journey. Got questions? Our team is here to help! Contact us at support@nyaymitra.com.
+                        Ready to experience the future of legal assistance? Join the LawBot AI community today and embark on a smoother, more informed legal journey. Got questions? Our team is here to help! Contact us at support@lawbuddy.com.
                     </p>
                     <hr />
                     <div id='start'>Community</div>

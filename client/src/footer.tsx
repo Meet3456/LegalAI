@@ -11,7 +11,7 @@ const footer = (props: Props) => {
                 <div className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex md:mx-0 mx-auto md:text-left md:mt-0 mt-10">
                         <a className="flex flex-col title-font font-medium items-center justify-center text-gray-900">
-                            <img src={nyaymitra} alt='nyaymitra' className='w-80' />
+                            <img src={nyaymitra} alt='law_buddy' className='w-80' />
                             {/* <h1 className='text-sm'>By</h1> */}
                             {/* <img src={code_omega} alt='nyaymitra' className='w-44' /> */}
                         </a>
