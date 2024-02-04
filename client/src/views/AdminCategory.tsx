@@ -13,16 +13,12 @@ import {
     ListItemText,
     Paper,
     Avatar,
-    Button
+    Button,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import logo from '../img/logo-wbag.png';
 import VerifiedIcon from '@mui/icons-material/Verified';
-=======
 // import logo from '../img/logo-wbag.png';
 import logo from '../img/logo_wbag.png';
->>>>>>> cdfe3e2061bb83bc72b7e4e1bf5c16e7328308c3
 import axios from 'axios';
 
 const AdminCategory = () => {
@@ -83,18 +79,18 @@ const AdminCategory = () => {
         <div style={{ flex: '0 0 20%' }} className='bg-sky-200 p-2'>
             <img src={logo} className='m-auto w-4/6'></img>
             <List>
-                <a><ListItem
+                <ListItem
                     component={Link}
                     to='/admin-home'
-                    className='hover:bg-blue-500 translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                    className='hover:bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
                 >
                     <DashboardIcon></DashboardIcon>
                     <ListItemText className='m-2' primary='Dashboard' />
-                </ListItem></a>
+                </ListItem>
                 <ListItem
                     component={Link}
                     to='/admin-category'
-                    className='bg-blue-500 translate-y-1 hover:scale-105 transition ease-in-out delay-90'
+                    className='bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
                 >
                     <CategoryIcon></CategoryIcon>
                     <ListItemText className='m-2' primary='Category' />
@@ -109,7 +105,7 @@ const AdminCategory = () => {
                 </ListItem>
                 <ListItem
                     component={Link}
-                    to='/admin-login'
+                    to='/logout'
                     className='hover:bg-blue-500 hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-90'
                 >
                     <LogoutIcon></LogoutIcon>
@@ -117,7 +113,6 @@ const AdminCategory = () => {
                 </ListItem>
             </List>
         </div>
-
 
             {/* Main Content (80%) */}
             <div style={{ flex: '1', padding: '16px' }}>
