@@ -25,7 +25,7 @@ const AdvoLogin = (props: Props) => {
   const navigate = useNavigate();
   const [state, setState] = useState({
     email: "",
-    password: "",
+    password: null,
     hidePassword: true,
     error: null,
     errorOpen: false,

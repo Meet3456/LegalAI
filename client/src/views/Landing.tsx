@@ -39,10 +39,10 @@ const Landing: React.FC = () => {
           }}
         >
           <Typography variant="h1" gutterBottom>
-            NyayMitra
+            Law Buddy
           </Typography>
           <Typography variant="subtitle1" paragraph>
-            This is a simple landing page created using Material-UI v5 and TypeScript.
+            This is a 
           </Typography>
           <Button variant="contained" color="primary">
             Get Started

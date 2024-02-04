@@ -11,6 +11,7 @@ import { NarrativeLegalism } from "./views/NarrativeLegal";
 import { DocumentSummarization } from "./views/DocumentSummarization";
 import Home from "./main/userhome";
 import Features from "./main/features";
+import Features1 from "./main/features1";
 import Advocate_home from "./main/advocatehome";
 import VideoCall from "./views/VideoCall"
 import RoomPage from "./views/RoomPage";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/advoconnect" element={<Lawyers />} />
         <Route path="/userhome" element={<Home />} />
         <Route path="/features" element={<Features />} />
+        <Route path="/advofeatures" element={<Features1 />} />
         <Route path="/advohome" element={<Advocate_home />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/community" element={<Community />} />
