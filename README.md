@@ -2,7 +2,11 @@
 
 ## Introduction
 **LAWBUDDY** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
-![image](https://github.com/Devang-Shah-49/LegalAI/assets/55392536/756344e0-332e-4c2f-9983-b9c6ab4c4f3a)
+### Home Page
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/80088008/42d10112-0886-4dea-8d0c-b8e3ca05f032)
+
+### Client connects to Advocate
+![image](https://github.com/Devang-Shah-49/LegalAI/assets/80088008/66653c2e-d772-40c3-b340-eb9359a73f63)
 
 
 
