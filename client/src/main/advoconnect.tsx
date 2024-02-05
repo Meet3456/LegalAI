@@ -42,10 +42,15 @@ const LawyerCard: React.FC<LawyerCardProps> = ({
 
   const openForm = (): void => {
     setIsFormOpen(true);
+    // window.alert("Successfully Connected to the Lawyer!");
   };
 
   const closeForm = (): void => {
     setIsFormOpen(false);
+  };
+  const newReq = (): void => {
+    window.alert("Request sent to the Lawyer!");
+    window.location.href = "/userhome";
   };
 
   // ------------------------------------------------------------------
@@ -242,14 +247,8 @@ const LawyerCard: React.FC<LawyerCardProps> = ({
                 >
                   Get Connected
                 </button> */}
-                <button
-                  // onClick={window.alert(
-                  //   "Successfully Connected to the Lawyer!"
-                  // )}
-                  type='submit'
-                  className='btn'
-                >
-                  Get Connected
+                <button onClick={newReq} type='submit' className='btn'>
+                  Request meeting
                 </button>
                 <button
                   type='button'
@@ -264,6 +263,7 @@ const LawyerCard: React.FC<LawyerCardProps> = ({
           <a
             href='#'
             onClick={openForm}
+            // onClick={window.alert("Successfully Connected to the Lawyer!")}
             className='m-3 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-black rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
           >
             Get Connected

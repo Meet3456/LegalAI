@@ -149,6 +149,7 @@ def nyaymitra_kyr_chain(vectordb):
         1. Context and Precision: Tailor your response to the user's query using the specific details provided in the legal context from India. Use only the most relevant laws and articles from the context.
         2. Comprehensive and Simplified Responses: Offer thorough responses by incorporating all relevant laws and articles. For each legal term, provide a user-friendly explanation to enhance comprehension.
         3. User-Friendly Language: Aim for simplicity in your explanations, considering that users may not have a legal background. Break down complex terms or phrases to make them more accessible to the user. Provide examples on how the law is relevant and useful to the user's query.
+        4. If the answer to the query is not present in the provided context, just say "you don't know the answer to the question". Do not make up an answer on your own.
         LEGAL CONTEXT: \n{context}"""
     )
     human_message_prompt = HumanMessagePromptTemplate.from_template(
