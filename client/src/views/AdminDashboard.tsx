@@ -25,7 +25,19 @@ import { styled } from '@mui/material/styles';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import axios from 'axios';
+import { Chart } from 'react-google-charts';
 
+const data = [
+    ['Law Type', 'Number'],
+    ['Civil Law', 100],
+    ['Criminal Law', 200],
+    ['Real Estate Law', 150],
+    ['Family Law', 250],
+];
+const options = {
+    title: 'Cases in Andhra Pradesh',
+   };
+   
 const VisuallyHiddenInput = styled('input')({
     clip: 'rect(0 0 0 0)',
     clipPath: 'inset(50%)',
@@ -38,14 +50,14 @@ const VisuallyHiddenInput = styled('input')({
     width: 1,
 });
 
-const data = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-    { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
-    { name: 'Group E', value: 278 },
-    { name: 'Group F', value: 189 },
-];
+// const data = [
+//     { name: 'Group A', value: 400 },
+//     { name: 'Group B', value: 300 },
+//     { name: 'Group C', value: 300 },
+//     { name: 'Group D', value: 200 },
+//     { name: 'Group E', value: 278 },
+//     { name: 'Group F', value: 189 },
+// ];
 
 const statesOfIndia = [
     'Andhra Pradesh',
@@ -165,12 +177,12 @@ const AdminDashboard: React.FC = () => {
         event: React.ChangeEvent<HTMLInputElement>,
         index: number
     ) => {
-        console.log(generatedQuestions)        
+        console.log(generatedQuestions)
         const updatedQuestions = [...generatedQuestions];
         updatedQuestions[index] = event.target.value;
         setGeneratedQuestions(updatedQuestions);
     };
-    
+
     const handleDrafting = async () => {
         console.log("I am drafting stuff");
         if (!fineSelectedFiles) {
@@ -182,23 +194,23 @@ const AdminDashboard: React.FC = () => {
         for (let i = 0; i < fineSelectedFiles.length; i++) {
             formData.append('documents', fineSelectedFiles[i]);
 
-        // Append input question to FormData
-        generatedQuestions.forEach((question) => formData.append("questions", question));
+            // Append input question to FormData
+            generatedQuestions.forEach((question) => formData.append("questions", question));
 
-        try {
-            const response = await axios.post(
-                '/api/admin/update-drafting',
-                formData
-            );
-            console.log('Files and question sent successfully', response.data);
-            // Handle the response as needed
-        } catch (error) {
-            console.error('Error sending files and question:', error);
-        }
-    };
-}
+            try {
+                const response = await axios.post(
+                    '/api/admin/update-drafting',
+                    formData
+                );
+                console.log('Files and question sent successfully', response.data);
+                // Handle the response as needed
+            } catch (error) {
+                console.error('Error sending files and question:', error);
+            }
+        };
+    }
 
-    
+
     return (
         <div style={{ display: 'flex', height: '100vh' }}>
             {/* Sidebar (20%) */}
@@ -268,6 +280,14 @@ const AdminDashboard: React.FC = () => {
                                 ))}
                             </Select>
                         </FormControl>
+                        <Chart
+                            chartType="PieChart"
+                            data={data}
+                            options={options}
+                            width={'100%'}
+                            height={'400px'}
+                        />
+
                         <Typography variant='h5'>Add New Documents</Typography>
 
 
@@ -297,11 +317,11 @@ const AdminDashboard: React.FC = () => {
                             Update Data
                         </Button>
                     </Box>
-                    <Box style={{ border: '1px solid #ccc', padding: '16px', borderRadius: '8px' ,flex:'auto'}}>
+                    <Box style={{ border: '1px solid #ccc', padding: '16px', borderRadius: '8px', flex: 'auto' }}>
                         <Typography variant='h5' style={{ marginTop: '30px', marginBottom: '16px' }}>
                             Input Question
                         </Typography>
-                        <FormControl required fullWidth margin="normal" style={{flex:'auto'}}>
+                        <FormControl required fullWidth margin="normal" style={{ flex: 'auto' }}>
                             <InputLabel htmlFor="question">Question</InputLabel>
                             <Input
                                 name="question"

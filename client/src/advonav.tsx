@@ -45,18 +45,18 @@ const Navbar = (props: Props) => {
                         <ul className="pl-0 mb-2 flex flex-col space-y-20 items-center justify-center">
                             <li >
                                 <a className="nav-link page-scroll active" href="#header">
-                                    <NavLink to="/userhome">Home </NavLink>
+                                    <NavLink to="/advohome">Home </NavLink>
                                     <span className="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li>
                                 <a className="nav-link page-scroll" href="#features">
-                                    <NavLink to="/features">Features</NavLink>
+                                    <NavLink to="/advofeatures">Features</NavLink>
                                 </a>
                             </li>
                             <li>
                                 <a className="nav-link page-scroll" href="#details">
-                                    <NavLink to="/advoconnect">AdvoConnect</NavLink>
+                                    <NavLink to="/connect">Client Connect</NavLink>
                                 </a>
                             </li>
                         </ul>
@@ -67,13 +67,13 @@ const Navbar = (props: Props) => {
                         <ul className="pl-0 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                             <li>
                                 <a className="nav-link page-scroll active" href="#header">
-                                    <NavLink to="/userhome">Home </NavLink>
+                                    <NavLink to="/advohome">Home </NavLink>
                                     <span className="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li>
                                 <a className="nav-link page-scroll" href="#features">
-                                    <NavLink to="/features">Features</NavLink>
+                                    <NavLink to="/advofeatures">Features</NavLink>
                                 </a>
                             </li>
                             <li>

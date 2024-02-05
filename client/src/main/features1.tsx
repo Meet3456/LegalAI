@@ -6,7 +6,7 @@ import forum from './features/forum.png';
 import documentImg from './features/document.png';
 import lawFeatures from './features/LawFeatures.png';
 import rights from './features/rights.png';
-import Navbar from '@/navbar';
+import Navbar from '../advonav';
 import Footer from '@/footer';
 
 // Assuming CardData type definition
@@ -19,7 +19,7 @@ type CardData = {
 
 type Props = {};
 
-const Features = (props: Props) => {
+const Features1 = (props: Props) => {
   const cardsData: CardData[] = [
     {
       imageUrl: documentImg,
@@ -38,10 +38,10 @@ const Features = (props: Props) => {
     },
     {
       imageUrl: lawyer,
-      title: "Advo Connect",
-      url: "/advoconnect",
+      title: "Client Connect",
+      url: "/connect",
       description:
-        "Connect with legal experts in real-time through Advo Connect. Engage in conversations to seek advice and clarification on a wide range of legal matters with our interactive platform.",
+        "Connect with our users in real-time through Client Connect. Engage in conversations to seek advice and clarification on a wide range of legal issues with our interactive platform.",
     },
     {
       imageUrl: forum,
@@ -105,4 +105,4 @@ const Features = (props: Props) => {
   );
 };
 
-export default Features;
+export default Features1;

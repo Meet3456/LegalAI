@@ -188,8 +188,8 @@ const Home: React.FC = () => {
                     <div className="lg:col-span-5">
                         <div className="mb-16 lg:mb-0 xl:mt-16">
                             <h2 className="mb-6">Document Drafting</h2>
-                            <p className="my-4">Immerse yourself in the NyayMitra Community, a digital sanctuary for legal enthusiasts and inquisitive minds alike. Engage in thought-provoking discussions, seek advice, and explore an abundance of legal resources within a supportive network</p>
-                            <p className="my-4">Whether you're a seasoned professional or an eager learner, NyayMitra Community is your destination for continuous legal education, networking opportunities, and staying informed about the ever-evolving legal landscape.</p>
+                            <p className="my-4">Immerse yourself in the Law Buddy Community, a digital sanctuary for legal enthusiasts and inquisitive minds alike. Engage in thought-provoking discussions, seek advice, and explore an abundance of legal resources within a supportive network</p>
+                            <p className="my-4">Whether you're a seasoned professional or an eager learner, Law Buddy Community is your destination for continuous legal education, networking opportunities, and staying informed about the ever-evolving legal landscape.</p>
                         </div>
                     <a className="btn-solid-reg popup-with-move-anim" href="https://localhost:8000">Details</a>
                     </div>
@@ -216,10 +216,10 @@ const Home: React.FC = () => {
                             <h2 className="mb-6">Know Your Rights</h2>
                             <ol className="list mb-7 space-y-2">
                                 <li className="flex">
-                                    <div>Empower yourself with NyayMitra's Know-your-Right (KYR) Framework, a dynamic chatbot designed for practical understanding of basic laws in various scenarios. Immerse yourself in an interactive exploration that unveils legal landscapes with actionable guidance.</div>
+                                    <div>Empower yourself with Law Buddy's Know-your-Right (KYR) Framework, a dynamic chatbot designed for practical understanding of basic laws in various scenarios. Immerse yourself in an interactive exploration that unveils legal landscapes with actionable guidance.</div>
                                 </li>
                                 <li className="flex">
-                                    <div> Whether it's understanding your rights in everyday situations or navigating through legal challenges, the KYR Framework ensures you're equipped with the knowledge to make informed decisions confidently. NyayMitra transforms legal understanding into a practical and engaging adventure with the KYR Framework.</div>
+                                    <div> Whether it's understanding your rights in everyday situations or navigating through legal challenges, the KYR Framework ensures you're equipped with the knowledge to make informed decisions confidently. Law Buddy transforms legal understanding into a practical and engaging adventure with the KYR Framework.</div>
                                 </li>
                             </ol>
                             <a className="btn-solid-reg popup-with-move-anim" href="/chatbot-lawbot">Details</a>
@@ -234,7 +234,7 @@ const Home: React.FC = () => {
                         <div className="mb-16 lg:mb-0 xl:mt-16">
                             <h2 className="mb-6">Narrative Legalism</h2>
                             <p className="mb-4">Embark on a captivating journey through Narrative Legalism, an innovative chatbot that transforms the learning of laws into playful and enjoyable narratives. </p>
-                            <p className="mb-4">Dive into engaging stories that unravel legal complexities in a fun and accessible manner. NyayMitra's Narrative Legalism goes beyond traditional legal education, making the exploration of laws a delightful adventure through interactive storytelling</p>
+                            <p className="mb-4">Dive into engaging stories that unravel legal complexities in a fun and accessible manner. Law Buddy's Narrative Legalism goes beyond traditional legal education, making the exploration of laws a delightful adventure through interactive storytelling</p>
                         </div>
                         <a className="btn-solid-reg popup-with-move-anim" href="https://localhost:8003">Details</a>
                     
@@ -259,7 +259,7 @@ const Home: React.FC = () => {
                             <h2 className="mb-6">Connect to Advocate</h2>
                             <ol className="list mb-7 space-y-2">
                                 <li className="flex">
-                                    <div>Experience personalized legal support like never before with AdvoConnect, NyayMitra's groundbreaking lawyer matchmaking feature. </div>
+                                    <div>Experience personalized legal support like never before with AdvoConnect, Law Buddy's groundbreaking lawyer matchmaking feature. </div>
                                 </li>
                                 <li className="flex">
                                     <div> Imagine a streamlined process that connects you with the ideal legal expert based on your unique needs, location, and specialization requirements. Bid farewell to the arduous task of finding the right lawyer; AdvoConnect simplifies the journey, ensuring you discover the perfect legal representation effortlessly and effectively..</div>
