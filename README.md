@@ -1,7 +1,7 @@
-# LAWBUDDY
+# NYAYMITRA
 
 ## Introduction
-**LAWBUDDY** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
+**NYAYMITRA** is an advanced legal platform designed to empower individuals with knowledge about their rights and legalities under Indian laws. Leveraging cutting-edge technology, the platform offers a range of features, including a Know-Your-Rights chatbot, document retrieval, legal insights, and more.
 ### Home Page
 ![image](https://github.com/Devang-Shah-49/LegalAI/assets/80088008/42d10112-0886-4dea-8d0c-b8e3ca05f032)
 
